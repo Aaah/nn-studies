@@ -1,0 +1,25 @@
+\documentclass[14pt,border=10pt]{standalone}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\begin{document}
+
+% \begin{table}[!ht]
+\begin{tabular}{c|cccccc|c}
+	                     & \multicolumn{6}{c}{Neurons count in the networks} & Parameters count                                                                                                                                                                                          \\
+	                     & 4                                                 & 8                                 & 16                                & 32                                & 64                                & 128                               &                       \\ \hline
+	\multirow{2}{*}{4}   & \cellcolor{blue!25}$\alpha = 0.2$                 & $\alpha = 0.045$                  & $\alpha = 0.003$                  &                                   &                                   &                                   & \multirow{2}{*}{200}  \\
+	                     & \cellcolor{blue!25}0.64; 60\%                     & 0.60; 60\%                        & 0.60; 61\%                        &                                   &                                   &                                   &                       \\ \hline
+	\multirow{2}{*}{8}   & $\alpha = 0.65$                                   & \cellcolor{blue!25}$\alpha = 0.2$ & $\alpha = 0.06$                   & $\alpha = 0.015$                  &                                   &                                   & \multirow{2}{*}{320}  \\
+	                     & 0.7 ; 55\%                                        & \cellcolor{blue!25}0.57; 65\%     & 0.56; 65\%                        & 0.61; 60\%                        &                                   &                                   &                       \\ \hline
+	\multirow{2}{*}{16}  &                                                   & $\alpha = 0.54$                   & \cellcolor{blue!25}$\alpha = 0.2$ & $\alpha = 0.062$                  & $\alpha = 0.014$                  &                                   & \multirow{2}{*}{570}  \\
+	                     &                                                   & 0.55; 67\%                        & \cellcolor{blue!25}0.45; 73\%     & 0.54; 68\%                        & 0.51; 71\%                        &                                   &                       \\ \hline
+	\multirow{2}{*}{32}  &                                                   &                                   & $\alpha = 0.53$                   & \cellcolor{blue!25}$\alpha = 0.2$ & $\alpha = 0.06$                   & $\alpha = 0.015$                  & \multirow{2}{*}{1200} \\
+	                     &                                                   &                                   & 0.4; 75\%                         & \cellcolor{blue!25}0.36; 75\%     & 0.33; 75\%                        & 0.45; 72\%                        &                       \\ \hline
+	\multirow{2}{*}{64}  &                                                   &                                   &                                   & $\alpha = 0.54$                   & \cellcolor{blue!25}$\alpha = 0.2$ & $\alpha = 0.06$                   & \multirow{2}{*}{2500} \\
+	                     &                                                   &                                   &                                   & 0.25; 80\%                        & \cellcolor{blue!25}0.18; 81\%     & 0.23; 80\%                        &                       \\ \hline
+	\multirow{2}{*}{128} &                                                   &                                   &                                   &                                   & $\alpha = 0.65$                   & \cellcolor{blue!25}$\alpha = 0.2$ & \multirow{2}{*}{6300} \\
+	                     &                                                   &                                   &                                   &                                   & 0.15; 81\%                        & \cellcolor{blue!25}0.06; 85\%     &                       \\
+\end{tabular}
+% \end{table}
+
+\end{document}
